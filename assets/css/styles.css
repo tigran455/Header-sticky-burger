@@ -1,11 +1,6 @@
 :root {
     --orange: #E77414;
-    --Style: #6D3B29;
     --white: #F5F5F5;
-    --brown2: #B1593A;
-    --brown3: #FD925B;
-    --brown-dark: #6D3B29;
-    --black: #252525;
 }
 html{
     scroll-behavior: smooth;
@@ -35,11 +30,6 @@ a{
     padding-left: 10px;
     padding-right: 10px;
 }
-body{
-    overflow-x: hidden;
-    background-color: var(--white);
-}
-
 /*------------------header start-------------------*/
 header{
     background-color: var(--white);
@@ -75,14 +65,7 @@ header{
     align-items: end;
 }
 .logo_wrapper span{
-    font-family: "Carme", sans-serif;
-    font-weight: 500;
-    color: #585757;
-    -webkit-text-stroke-color: #585757;
     font-size: clamp(28px,calc(28px + (40 - 28) * ((100vw - 768px) / (1320 - 768))),40px);
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: -0.398px;
 }
 .menu{
     display: flex;
@@ -90,14 +73,6 @@ header{
     gap: 5px;
     padding-bottom: 10px;
 }
-/*---------------////////////////////----------------------*/
-.menu li{
-    font-weight: 600;
-    color: #9A9A9A;
-    font-size: 20px;
-}
-/*---------------////////////////////----------------------*/
-
 .menu li{
     font-weight: 400;
     color: #9A9A9A;
@@ -215,7 +190,6 @@ header{
 /*----------------header end--------------------*/
 
 @media (max-width: 1024px) {
-
     .languages{
         margin-right: clamp(20px,calc(20px + (49 - 20) * ((100vw - 320px) / (1024 - 320))),49px);
         margin-left: auto;
@@ -225,7 +199,6 @@ header{
         font-size: clamp(12px,calc(12px + (16 - 12) * ((100vw - 320px) / (1024 - 320))),16px);
         padding-bottom: 0;
     }
-
     .burger_icon{
         display: flex;
     }
@@ -270,9 +243,6 @@ header{
     .burger_icon{
         height: clamp(25px,calc(25px + (30 - 25) * ((100vw - 320px) / (768 - 320))),30px);
     }
-    .icon-text2{
-        gap: clamp(5px,calc(5px + (25 - 5) * ((100vw - 320px) / (768 - 320))),25px);
-    }
 }
 @media (max-width: 320px) {
     .logo_wrapper span{
@@ -307,4 +277,11 @@ header{
 #contacts{
     height: 1000px;
     background-color: black;
+}
+.nav_section{
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
